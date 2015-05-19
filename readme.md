@@ -20,11 +20,11 @@
 
 + callback{Function}
     * err:{Object}
+        * code£º´íÎó´úÂë
+                * 1: Warning
+                * 2£ºFatal error
+                * 7£ºarg err
+                * 8£ºNot enough memory for operation
+                * 255£ºUser stopped the process
     * des:ÃèÊö
-    * code£º´íÎó´úÂë
-        * 1: Warning
-        * 2£ºFatal error
-        * 7£ºarg err
-        * 8£ºNot enough memory for operation
-        * 255£ºUser stopped the process
 
