@@ -9,9 +9,9 @@ var pro = require( "child_process" );
 //    console.log( err )
 //} );
 
-//z.list( "fire.zip", function ( err, result ) {
-//    console.log( err ? err : result.size );
-//} );
+z.list( "zach-sprite.rar", function ( err, result ) {
+    //console.log( err ? err : result );
+} );
 
 
 //z.dele( {
@@ -23,10 +23,10 @@ var pro = require( "child_process" );
 //} );
 
 
-z.extracts( {
-    input : "fire.zip",
-    filter : "*.html",
-    r : true
-}, function ( err, str ) {
-    console.log( str )
-} );
+//z.extracts( {
+//    input : "fire.zip",
+//    filter : "*.html",
+//    r : true
+//}, function ( err, str ) {
+//    console.log( str )
+//} );

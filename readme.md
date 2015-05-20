@@ -66,7 +66,7 @@
 ```javascript
 {
   path:// 压缩包的路径
-  size:// 压缩包的大小
+  size:// 压缩包的大小,zip能读到这个数据，rar压缩包读不到这个数据（值是NAN）
   foldersNum:// 压缩包中文件夹的数量
   filesNum:// 压缩包中文件的数量
   files:[
@@ -74,8 +74,8 @@
         name:
         date:
         time:
-        size:
-        compressed:
+        size: // rar文件是0，zip能读出来
+        compressed: // rar文件是0，zip能读出来
      }
      ……
   ]
