@@ -1,6 +1,6 @@
 <img src="zach.gif">
 
-### add( arg, callback ) 压缩文件 [支持.rar和.zip]
+### add( arg, callback ) 压缩文件 [仅仅支持.zip]
 + arg{Object}
     * output: {String}要生成的文件名。带后缀，后缀可以是：.rar、.zip
     * input {String|array}要被压缩的文件。字符串可以是一个文件，也可以是一个文件夹，可以使用通配符：*和?。*表示任意数量的字符序列，?表示任意一个字符。
