@@ -10,7 +10,7 @@ var pro = require( "child_process" );
 //} );
 
 z.list( "zach-sprite.rar", function ( err, result ) {
-    //console.log( err ? err : result );
+    console.log( err ? err : result );
 } );
 
 
