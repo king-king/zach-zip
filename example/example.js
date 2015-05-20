@@ -9,24 +9,24 @@ var pro = require( "child_process" );
 //    console.log( err )
 //} );
 
+//z.list( "fire.zip", function ( err, result ) {
+//    console.log( err ? err : result.size );
+//} );
 
-pro.execFile( "../lib/7z.exe", ["l", "fire.zip"], function ( err, stdout, stderr ) {
-    var result = {};
-    var arr = stdout.split( "\n" );
-    result.path = arr[6].split( "= " )[1];
-    result.size = arr[8].split( "= " )[1];
-    result.files = [];
-    result.foldersNum = arr[arr.length - 2].split( /\s+/ )[5];
-    result.filesNum = arr[arr.length - 2].split( /\s+/ )[3];
-    arr.slice( 12, -3 ).forEach( function ( info ) {
-        var arr = info.split( /\s+/ );
-        result.files.push( {
-            date : arr[0],
-            time : arr[1],
-            size : arr[3],
-            compressed : arr[4],
-            name : arr[5]
-        } );
-    } );
-    console.log( result.filesNum );
+
+//z.dele( {
+//    file : "fire.zip",
+//    target : "*.js",
+//    r : true
+//}, function ( err, str ) {
+//    console.log( str )
+//} );
+
+
+z.extracts( {
+    input : "fire.zip",
+    filter : "*.html",
+    r : true
+}, function ( err, str ) {
+    console.log( str )
 } );
