@@ -1,83 +1,83 @@
 <img src="zach.gif">
 
-### add( arg, callback ) Ñ¹ËõÎÄ¼ş [Ö§³Ö.rarºÍ.zip]
+### add( arg, callback ) å‹ç¼©æ–‡ä»¶ [æ”¯æŒ.rarå’Œ.zip]
 + arg{Object}
-    * output: {String}ÒªÉú³ÉµÄÎÄ¼şÃû¡£´øºó×º£¬ºó×º¿ÉÒÔÊÇ£º.rar¡¢.zip
-    * input {String|array}Òª±»Ñ¹ËõµÄÎÄ¼ş¡£×Ö·û´®¿ÉÒÔÊÇÒ»¸öÎÄ¼ş£¬Ò²¿ÉÒÔÊÇÒ»¸öÎÄ¼ş¼Ğ£¬¿ÉÒÔÊ¹ÓÃÍ¨Åä·û£º*ºÍ?¡£*±íÊ¾ÈÎÒâÊıÁ¿µÄ×Ö·ûĞòÁĞ£¬?±íÊ¾ÈÎÒâÒ»¸ö×Ö·û¡£
-    * r :{Boolean} ±íÊ¾ÊÇ·ñµİ¹é£¬ÀıÈçµ±ĞèÒª½«×ÓÎÄ¼ş¼ĞÖĞµÄÄÚÈİÒ²Ñ¹ËõµÄÊ±ºò£¬¾ÍĞèÒªÉèÖÃrÎªtrue£¬Ä¬ÈÏÎªfalse¡£
-    * p:{String} ÃÜÂë£¬Ñ¹ËõµÄÊ±ºò¿ÉÒÔÖ¸¶¨ÃÜÂë¡£
+    * output: {String}è¦ç”Ÿæˆçš„æ–‡ä»¶åã€‚å¸¦åç¼€ï¼Œåç¼€å¯ä»¥æ˜¯ï¼š.rarã€.zip
+    * input {String|array}è¦è¢«å‹ç¼©çš„æ–‡ä»¶ã€‚å­—ç¬¦ä¸²å¯ä»¥æ˜¯ä¸€ä¸ªæ–‡ä»¶ï¼Œä¹Ÿå¯ä»¥æ˜¯ä¸€ä¸ªæ–‡ä»¶å¤¹ï¼Œå¯ä»¥ä½¿ç”¨é€šé…ç¬¦ï¼š*å’Œ?ã€‚*è¡¨ç¤ºä»»æ„æ•°é‡çš„å­—ç¬¦åºåˆ—ï¼Œ?è¡¨ç¤ºä»»æ„ä¸€ä¸ªå­—ç¬¦ã€‚
+    * r :{Boolean} è¡¨ç¤ºæ˜¯å¦é€’å½’ï¼Œä¾‹å¦‚å½“éœ€è¦å°†å­æ–‡ä»¶å¤¹ä¸­çš„å†…å®¹ä¹Ÿå‹ç¼©çš„æ—¶å€™ï¼Œå°±éœ€è¦è®¾ç½®rä¸ºtrueï¼Œé»˜è®¤ä¸ºfalseã€‚
+    * p:{String} å¯†ç ï¼Œå‹ç¼©çš„æ—¶å€™å¯ä»¥æŒ‡å®šå¯†ç ã€‚
 
 + callback{Function}
     * err:{Object}
-        * code£º´íÎó´úÂë
+        * codeï¼šé”™è¯¯ä»£ç 
             * 1: Warning
-            * 2£ºFatal error
-            * 7£ºarg err
-            * 8£ºNot enough memory for operation
-            * 255£ºUser stopped the process
-    * des:ÃèÊö
+            * 2ï¼šFatal error
+            * 7ï¼šarg err
+            * 8ï¼šNot enough memory for operation
+            * 255ï¼šUser stopped the process
+    * des:æè¿°
 
-### dele( arg, callback ) ´ÓÑ¹Ëõ°üÖĞÉ¾³ıÎÄ¼ş[½öÖ§³Ö.zip]
+### dele( arg, callback ) ä»å‹ç¼©åŒ…ä¸­åˆ é™¤æ–‡ä»¶[ä»…æ”¯æŒ.zip]
  +arg{Object}
-    * file{String} Òª´¦ÀíµÄÑ¹Ëõ°üÃû³Æ
-    * target {String|array} ÒªÉ¾³ıµÄÎÄ¼ş£¬×Ö·û´®»ò×Ö·û´®Êı×é
-    * r{Boolean} ÊÇ·ñµİ¹é£¬Ä¬ÈÏÎªfalse
+    * file{String} è¦å¤„ç†çš„å‹ç¼©åŒ…åç§°
+    * target {String|array} è¦åˆ é™¤çš„æ–‡ä»¶ï¼Œå­—ç¬¦ä¸²æˆ–å­—ç¬¦ä¸²æ•°ç»„
+    * r{Boolean} æ˜¯å¦é€’å½’ï¼Œé»˜è®¤ä¸ºfalse
 
 + callback{Function}
     * err:{Object}
-        * code£º´íÎó´úÂë
+        * codeï¼šé”™è¯¯ä»£ç 
             * 1: Warning
-            * 2£ºFatal error
-            * 7£ºarg err
-            * 8£ºNot enough memory for operation
-            * 255£ºUser stopped the process
-    * des:ÃèÊö
+            * 2ï¼šFatal error
+            * 7ï¼šarg err
+            * 8ï¼šNot enough memory for operation
+            * 255ï¼šUser stopped the process
+    * des:æè¿°
 
-### extracts(arg, callback) ½âÑ¹ÎÄ¼ş
+### extracts(arg, callback) è§£å‹æ–‡ä»¶
  +arg{Object}
-    * input{String} Òª´¦ÀíµÄÑ¹Ëõ°üÂ·¾¶
-    * o{String} Êä³öÂ·¾¶£¬Ä¬ÈÏÊÇµ±Ç°ÎÄ¼ş¼Ğ
-    * filter{String|array} ¿ÉÒÔÖ¸¶¨½âÑ¹ÌØ¶¨µÄÎÄ¼ş
-    * r{Boolean}Èç¹ûfilterÉè¶¨ÁË¹ıÂËÌõ¼ş£¬ÉèÖÃrÎªtrue¿ÉÒÔÊµÏÖµİ¹éÉî¶È¹ıÂË 
+    * input{String} è¦å¤„ç†çš„å‹ç¼©åŒ…è·¯å¾„
+    * o{String} è¾“å‡ºè·¯å¾„ï¼Œé»˜è®¤æ˜¯å½“å‰æ–‡ä»¶å¤¹
+    * filter{String|array} å¯ä»¥æŒ‡å®šè§£å‹ç‰¹å®šçš„æ–‡ä»¶
+    * r{Boolean}å¦‚æœfilterè®¾å®šäº†è¿‡æ»¤æ¡ä»¶ï¼Œè®¾ç½®rä¸ºtrueå¯ä»¥å®ç°é€’å½’æ·±åº¦è¿‡æ»¤ 
     
  + callback{Function}
      * err:{Object}
-         * code£º´íÎó´úÂë
+         * codeï¼šé”™è¯¯ä»£ç 
              * 1: Warning
-             * 2£ºFatal error
-             * 7£ºarg err
-             * 8£ºNot enough memory for operation
-             * 255£ºUser stopped the process
-     * des:ÃèÊö
-### list(file, callback) ÁĞ³öÑ¹Ëõ°üÖĞµÄËùÓĞÎÄ¼ş
-+ file{String} Òª´¦ÀíµÄÑ¹Ëõ°üÂ·¾¶
+             * 2ï¼šFatal error
+             * 7ï¼šarg err
+             * 8ï¼šNot enough memory for operation
+             * 255ï¼šUser stopped the process
+     * des:æè¿°
+### list(file, callback) åˆ—å‡ºå‹ç¼©åŒ…ä¸­çš„æ‰€æœ‰æ–‡ä»¶
++ file{String} è¦å¤„ç†çš„å‹ç¼©åŒ…è·¯å¾„
 
 + callback{Function}
        * err:{Object}
-           * code£º´íÎó´úÂë
+           * codeï¼šé”™è¯¯ä»£ç 
                * 1: Warning
-               * 2£ºFatal error
-               * 7£ºarg err
-               * 8£ºNot enough memory for operation
-               * 255£ºUser stopped the process
-       * des:ÃèÊö
+               * 2ï¼šFatal error
+               * 7ï¼šarg err
+               * 8ï¼šNot enough memory for operation
+               * 255ï¼šUser stopped the process
+       * des:æè¿°
 
-+ ·µ»Ø{Object}
++ è¿”å›{Object}
 ```javascript
 {
-  path:// Ñ¹Ëõ°üµÄÂ·¾¶
-  size:// Ñ¹Ëõ°üµÄ´óĞ¡,zipÄÜ¶Áµ½Õâ¸öÊı¾İ£¬rarÑ¹Ëõ°ü¶Á²»µ½Õâ¸öÊı¾İ£¨ÖµÊÇNAN£©
-  foldersNum:// Ñ¹Ëõ°üÖĞÎÄ¼ş¼ĞµÄÊıÁ¿
-  filesNum:// Ñ¹Ëõ°üÖĞÎÄ¼şµÄÊıÁ¿
+  path:// å‹ç¼©åŒ…çš„è·¯å¾„
+  size:// å‹ç¼©åŒ…çš„å¤§å°,zipèƒ½è¯»åˆ°è¿™ä¸ªæ•°æ®ï¼Œrarå‹ç¼©åŒ…è¯»ä¸åˆ°è¿™ä¸ªæ•°æ®ï¼ˆå€¼æ˜¯NANï¼‰
+  foldersNum:// å‹ç¼©åŒ…ä¸­æ–‡ä»¶å¤¹çš„æ•°é‡
+  filesNum:// å‹ç¼©åŒ…ä¸­æ–‡ä»¶çš„æ•°é‡
   files:[
      {
         name:
         date:
         time:
-        size: // rarÎÄ¼şÊÇ0£¬zipÄÜ¶Á³öÀ´
-        compressed: // rarÎÄ¼şÊÇ0£¬zipÄÜ¶Á³öÀ´
+        size: // raræ–‡ä»¶æ˜¯0ï¼Œzipèƒ½è¯»å‡ºæ¥
+        compressed: // raræ–‡ä»¶æ˜¯0ï¼Œzipèƒ½è¯»å‡ºæ¥
      }
-     ¡­¡­
+     â€¦â€¦
   ]
 }
 
