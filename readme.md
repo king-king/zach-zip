@@ -17,11 +17,11 @@
             * 255：User stopped the process
     * des:描述
 
-### dele( arg, callback ) 从压缩文件中删除文件[仅支持.zip]
+### dele( arg, callback ) 从压缩包中删除文件[仅支持.zip]
  +arg{Object}
-    * file{String} 要处理的压缩文件名称
+    * file{String} 要处理的压缩包名称
     * target {String|array} 要删除的文件，字符串或字符串数组
-    * r :{Boolean} 是否递归，默认为false
+    * r{Boolean} 是否递归，默认为false
 
 + callback{Function}
     * err:{Object}
@@ -34,3 +34,53 @@
     * des:描述
 
 ### extracts(arg, callback) 解压文件
+ +arg{Object}
+    * input{String} 要处理的压缩包路径
+    * o{String} 输出路径，默认是当前文件夹
+    * filter{String|array} 可以指定解压特定的文件
+    * r{Boolean}如果filter设定了过滤条件，设置r为true可以实现递归深度过滤 
+    
+ + callback{Function}
+     * err:{Object}
+         * code：错误代码
+             * 1: Warning
+             * 2：Fatal error
+             * 7：arg err
+             * 8：Not enough memory for operation
+             * 255：User stopped the process
+     * des:描述
+### list(file, callback) 列出压缩包中的所有文件
++ file{String} 要处理的压缩包路径
+
++ callback{Function}
+       * err:{Object}
+           * code：错误代码
+               * 1: Warning
+               * 2：Fatal error
+               * 7：arg err
+               * 8：Not enough memory for operation
+               * 255：User stopped the process
+       * des:描述
+
++ 返回{Object}
+```javascript
+{
+  path:// 压缩包的路径
+  size:// 压缩包的大小
+  foldersNum:// 压缩包中文件夹的数量
+  filesNum:// 压缩包中文件的数量
+  files:[
+     {
+        name:
+        date:
+        time:
+        size:
+        compressed:
+     }
+     ……
+  ]
+}
+
+```
+
+
