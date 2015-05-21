@@ -1,6 +1,16 @@
 <img src="zach.gif">
 
-### add( arg, callback ) 压缩文件 [仅仅支持.zip]
+## Features 功能特性
+* 压缩文件生成zip压缩包。
+* 删掉zip压缩包中指定的文件。
+* 解压zip压缩包
+* 列出zip压缩包中的所有文件，包含文件的相关信息
+
+## Installation 安装
+	$ npm install zach-zip
+
+## 接口
+### add( arg, callback ) 压缩文件
 + arg{Object}
     * output: {String}要生成的文件名。带后缀，后缀可以是：.rar、.zip
     * input {String|array}要被压缩的文件。字符串可以是一个文件，也可以是一个文件夹，可以使用通配符：*和?。*表示任意数量的字符序列，?表示任意一个字符。
