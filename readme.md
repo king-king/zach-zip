@@ -12,7 +12,7 @@
 ## 接口
 ### add( arg, callback ) 压缩文件
 + arg{Object}
-    * output: {String}要生成的文件名。带后缀，后缀可以是：.rar、.zip
+    * output: {String}要生成的文件名，带后缀。
     * input {String|array}要被压缩的文件。字符串可以是一个文件，也可以是一个文件夹，可以使用通配符：*和?。*表示任意数量的字符序列，?表示任意一个字符。
     * r :{Boolean} 表示是否递归，例如当需要将子文件夹中的内容也压缩的时候，就需要设置r为true，默认为false。
     * p:{String} 密码，压缩的时候可以指定密码。
@@ -27,7 +27,7 @@
             * 255：User stopped the process
     * des:描述
 
-### dele( arg, callback ) 从压缩包中删除文件[仅支持.zip]
+### dele( arg, callback ) 从压缩包中删除文件
  +arg{Object}
     * file{String} 要处理的压缩包名称
     * target {String|array} 要删除的文件，字符串或字符串数组
