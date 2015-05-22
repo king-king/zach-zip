@@ -1,6 +1,6 @@
 {
   "name": "zach-zip",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "process zip package",
   "main": "lib/zach-zip.js",
   "directories": {
