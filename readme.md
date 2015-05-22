@@ -9,6 +9,9 @@
 ## Installation 安装
 	$ npm install zach-zip
 
+[问题反馈](https://github.com/king-king/zach-zip/issues)
+
+
 ## 接口
 ### add( arg, callback ) 压缩文件
 + arg{Object}
