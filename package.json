@@ -1,33 +1,28 @@
 {
-  "name": "zach-zip",
-  "version": "2.0.6",
-  "description": "process zip package",
-  "main": "lib/zach-zip.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/king-king/zach-zip.git"
-  },
-  "keywords": [
-    "zip",
-    "rar"
-  ],
-  "author": {
-    "name": "wangqun"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/king-king/zach-zip/issues"
-  },
-  "homepage": "https://github.com/king-king/zach-zip#readme",
-  "readme": "<img src=\"zach.gif\">\r\n\r\n### add( arg, callback ) 压缩文件 [支持.rar和.zip]\r\n+ arg{Object}\r\n    * output: {String}要生成的文件名。带后缀，后缀可以是：.rar、.zip\r\n    * input {String|array}要被压缩的文件。字符串可以是一个文件，也可以是一个文件夹，可以使用通配符：*和?。*表示任意数量的字符序列，?表示任意一个字符。\r\n    * r :{Boolean} 表示是否递归，例如当需要将子文件夹中的内容也压缩的时候，就需要设置r为true，默认为false。\r\n    * p:{String} 密码，压缩的时候可以指定密码。\r\n\r\n+ callback{Function}\r\n    * err:{Object}\r\n        * code：错误代码\r\n            * 1: Warning\r\n            * 2：Fatal error\r\n            * 7：arg err\r\n            * 8：Not enough memory for operation\r\n            * 255：User stopped the process\r\n    * des:描述\r\n\r\n### dele( arg, callback ) 从压缩包中删除文件[仅支持.zip]\r\n +arg{Object}\r\n    * file{String} 要处理的压缩包名称\r\n    * target {String|array} 要删除的文件，字符串或字符串数组\r\n    * r{Boolean} 是否递归，默认为false\r\n\r\n+ callback{Function}\r\n    * err:{Object}\r\n        * code：错误代码\r\n            * 1: Warning\r\n            * 2：Fatal error\r\n            * 7：arg err\r\n            * 8：Not enough memory for operation\r\n            * 255：User stopped the process\r\n    * des:描述\r\n\r\n### extracts(arg, callback) 解压文件\r\n +arg{Object}\r\n    * input{String} 要处理的压缩包路径\r\n    * o{String} 输出路径，默认是当前文件夹\r\n    * filter{String|array} 可以指定解压特定的文件\r\n    * r{Boolean}如果filter设定了过滤条件，设置r为true可以实现递归深度过滤 \r\n    \r\n + callback{Function}\r\n     * err:{Object}\r\n         * code：错误代码\r\n             * 1: Warning\r\n             * 2：Fatal error\r\n             * 7：arg err\r\n             * 8：Not enough memory for operation\r\n             * 255：User stopped the process\r\n     * des:描述\r\n### list(file, callback) 列出压缩包中的所有文件\r\n+ file{String} 要处理的压缩包路径\r\n\r\n+ callback{Function}\r\n       * err:{Object}\r\n           * code：错误代码\r\n               * 1: Warning\r\n               * 2：Fatal error\r\n               * 7：arg err\r\n               * 8：Not enough memory for operation\r\n               * 255：User stopped the process\r\n       * des:描述\r\n\r\n+ 返回{Object}\r\n```javascript\r\n{\r\n  path:// 压缩包的路径\r\n  size:// 压缩包的大小,zip能读到这个数据，rar压缩包读不到这个数据（值是NAN）\r\n  foldersNum:// 压缩包中文件夹的数量\r\n  filesNum:// 压缩包中文件的数量\r\n  files:[\r\n     {\r\n        name:\r\n        date:\r\n        time:\r\n        size: // rar文件是0，zip能读出来\r\n        compressed: // rar文件是0，zip能读出来\r\n     }\r\n     ……\r\n  ]\r\n}\r\n\r\n```\r\n\r\n\r\n\r\n\r\n",
-  "readmeFilename": "readme.md",
-  "_id": "zach-zip@2.0.2",
-  "_shasum": "9ab2ad2706256e07e0eb48ff8e86727fc08de601",
-  "_from": "zach-zip@*"
+	"name": "zach-zip",
+	"version": "2.0.6",
+	"description": "process zip package",
+	"main": "lib/zach-zip.js",
+	"directories": {
+		"example": "example"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/king-king/zach-zip.git"
+	},
+	"keywords": [
+		"zip",
+		"rar"
+	],
+	"author": {
+		"name": "wangqun"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/king-king/zach-zip/issues"
+	},
+	"homepage": "https://github.com/king-king/zach-zip#readme"
 }
